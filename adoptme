@@ -1,0 +1,85 @@
+wait(60)
+getgenv().Config = {
+Dashboard = {
+Enabled = false,
+GroupName = "",
+},
+EventFarm = {
+AutoHauntlet = false,
+AutoFashion = false,
+AutoSleepOrTreat = false,
+AutoTameCatBat = true, 
+AutoClaimTreatBag = true, 
+},
+BabyFarm = true,
+PetFarm = {
+Enabled = true,
+FarmEggs = false,
+BuyEggs = false,
+EggType = "any",
+BuyEggType = "any",
+MaxPets = 1,
+FarmUntilFullGrown = false,
+PrioritizeFriendship = true,
+SelectiveFarm = false,
+SelectedPetTypes = {},
+},
+Misc = {
+AutoNeon = true,
+AutoShowUI = true,
+},
+Performance = {
+Disable3DRendering = true,
+ReduceGraphics = true,
+},
+AutoPotion = {
+Enabled = false,
+SelectedPets = {},
+},
+AutoTrade = {
+Enabled = false,
+AutoAcceptTrades = false,
+SendTradesTo = "",
+TradeMode = "all",
+Categories = {},
+Items = {},
+},
+AutoBuy = {
+Enabled = false,
+SelectedItems = {},
+},
+AutoPay = {
+Enabled = false,
+TargetPlayer = "",
+},
+AutoOpen = {
+Enabled = false,
+Items = {},
+},
+AutoRecycle = {
+Enabled = false,
+RarityFilter = {
+common = true,
+uncommon = true,
+rare = false,
+ultra_rare = false,
+legendary = false
+},
+KeepNeons = true,
+KeepFullGrown = false
+},
+IdleProgression = {
+Enabled = true,
+SelectedPets = {"halloween_2025_slimingo", "halloween_2025_bat_cat"}
+},
+Webhook = {
+Enabled = false,
+URL = "https://discord.com/api/webhooks/",
+},
+TaskExclusion = {
+Enabled = false,
+ExcludedTasks = {},
+},
+}
+script_key="QlJflmRYfFDuZBBkRBMmfBYCMonQGtRc"
+loadstring(game:HttpGet("https://zekehub.com/scripts/AdoptMe/MassFarm.lua"))()
