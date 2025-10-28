@@ -45,8 +45,8 @@ Categories = {},
 Items = {},
 },
 AutoBuy = {
-Enabled = false,
-SelectedItems = {},
+Enabled = true,
+SelectedItems = {"halloween_2025_slimingo"},
 },
 AutoPay = {
 Enabled = false,
