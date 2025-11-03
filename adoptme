@@ -2,7 +2,7 @@ script_key="WorkFine";
 getgenv().Config = {
     ["PetAMountToBuy"] = "9999", -- can be 999
     ["WhatCategory"] = "pets", -- gifts if WhatCategory = "" then = pets
-    ["PetRemoteToBuy"] = "halloween_2025_ghostly_cat", -- exemple for gifts halloween_2025_spider_box
+    ["PetRemoteToBuy"] = "halloween_2025_aye_aye", -- exemple for gifts halloween_2025_spider_box
 
     ["PetFarmAutoSwitchFullGrown"] = false,
     ["PetFarmActive"] = false,
