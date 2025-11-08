@@ -38,7 +38,7 @@ Items = {}, -- e.g., {"dog", "cat", "sandwich"}
 ItemCounts = {}, -- e.g., {30, 12} - corresponds to Items array
 FilterByAge = false,
 SelectedAges = {}, -- 1=Newborn, 2=Junior, 3=PreTeen, 4=Teen, 5=PostTeen, 6=FullGrown
-ExcludeNeons = true,
+ExcludeNeons = false,
 ExcludeFullGrown = false
 },
 AutoBuy = {
