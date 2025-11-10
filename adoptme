@@ -26,7 +26,7 @@ Disable3DRendering = true, -- Disable 3D rendering for better performance
 ReduceGraphics = true, -- Reduce graphics quality to minimum
 },
 AutoPotion = {
-Enabled = true, -- Use age potions automatically
+Enabled = false, -- Use age potions automatically
 SelectedPets = {"halloween_2025_bat_cat", "halloween_2025_slimingo", "halloween_2025_ghostly_cat", "halloween_2025_aye_aye"}, -- Pet types to age with potions
 },
 AutoTrade = {
