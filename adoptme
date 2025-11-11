@@ -84,5 +84,5 @@ Enabled = false, -- Enable task exclusion system
 ExcludedTasks = {}, -- Tasks to skip (e.g., {"buccaneer_band", "summerfest_bonfire"})
 },
 }
-script_key="QlJflmRYfFDuZBBkRBMmfBYCMonQGtRc"
+script_key="OQtPcefIXokLTHbLAYDWspsTmCNlftGG"
 loadstring(game:HttpGet("https://zekehub.com/scripts/AdoptMe/MassFarm.lua"))()
