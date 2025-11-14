@@ -1,3 +1,4 @@
+wait(60)
 getgenv().Config = {
 Dashboard = {
 Enabled = false, -- true = Connect to Adopt Me dashboard for remote monitoring/control (uses websocket), false = Local farming only (better performance, no external connections)
