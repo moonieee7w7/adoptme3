@@ -1,4 +1,3 @@
-wait(60)
 getgenv().Config = {
 Dashboard = {
 Enabled = false, -- true = Connect to Adopt Me dashboard for remote monitoring/control (uses websocket), false = Local farming only (better performance, no external connections)
@@ -9,7 +8,7 @@ PetFarm = {
 Enabled = false, -- Enable/disable pet farming
 FarmEggs = true, -- Farm eggs instead of regular pets
 BuyEggs = true, -- Automatically buy eggs when needed
-EggType = "retired_egg", "aztec_egg_2025_aztec_egg", "pet_recycler_2025_crystal_egg", "pet_recycler_2025_basic_egg" -- Which egg type to farm (any or specific egg ID)
+EggType = "retired_egg", "aztec_egg_2025_aztec_egg", "pet_recycler_2025_crystal_egg", "pet_recycler_2025_basic_egg", -- Which egg type to farm (any or specific egg ID)
 BuyEggType = "retired_egg", "aztec_egg_2025_aztec_egg", -- Which egg type to buy
 MaxPets = 1, -- Maximum pets to equip (1-2)
 FarmUntilFullGrown = false, -- Prioritize pets that aren't full grown
@@ -83,6 +82,6 @@ TaskExclusion = {
 Enabled = false, -- Enable task exclusion system
 ExcludedTasks = {}, -- Tasks to skip (e.g., {"buccaneer_band", "summerfest_bonfire"})
 },
-}
+};
 script_key="OQtPcefIXokLTHbLAYDWspsTmCNlftGG"
 loadstring(game:HttpGet("https://zekehub.com/scripts/AdoptMe/MassFarm.lua"))()
