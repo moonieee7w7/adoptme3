@@ -1,3 +1,4 @@
+wait(60)
 getgenv().Config = {
 Dashboard = {
 Enabled = false, -- true = Connect to Adopt Me dashboard for remote monitoring/control (uses websocket), false = Local farming only (better performance, no external connections)
@@ -5,7 +6,7 @@ GroupName = "", -- Group name to organize accounts on the Adopt Me dashboard (on
 },
 BabyFarm = true, -- Enable/disable baby farming
 PetFarm = {
-Enabled = false, -- Enable/disable pet farming
+Enabled = tue, -- Enable/disable pet farming
 FarmEggs = true, -- Farm eggs instead of regular pets
 BuyEggs = true, -- Automatically buy eggs when needed
 EggType = "aztec_egg_2025_aztec_egg", "retired_egg", "pet_recycler_2025_crystal_egg", "pet_recycler_2025_basic_egg", -- Which egg type to farm (any or specific egg ID)
@@ -14,7 +15,7 @@ MaxPets = 1, -- Maximum pets to equip (1-2)
 FarmUntilFullGrown = false, -- Prioritize pets that aren't full grown
 PrioritizeFriendship = false, -- Prioritize pets with higher friendship
 SelectiveFarm = false, -- Only farm specific pet types
-SelectedPetTypes = {}, -- Pet types to farm when SelectiveFarm is enabled
+SelectedPetTypes = {"aztec_egg_2025_aztec_egg", "retired_egg", "pet_recycler_2025_crystal_egg", "pet_recycler_2025_basic_egg"}, -- Pet types to farm when SelectiveFarm is enabled
 },
 Misc = {
 AutoNeon = true, -- Automatically make neon pets when possible
