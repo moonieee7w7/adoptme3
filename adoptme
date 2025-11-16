@@ -6,7 +6,7 @@ GroupName = "", -- Group name to organize accounts on the Adopt Me dashboard (on
 },
 BabyFarm = true, -- Enable/disable baby farming
 PetFarm = {
-Enabled = tue, -- Enable/disable pet farming
+Enabled = true, -- Enable/disable pet farming
 FarmEggs = true, -- Farm eggs instead of regular pets
 BuyEggs = true, -- Automatically buy eggs when needed
 EggType = "any", -- Which egg type to farm (any or specific egg ID)
