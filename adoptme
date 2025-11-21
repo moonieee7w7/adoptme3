@@ -7,13 +7,13 @@ GroupName = "", -- Group name to organize accounts on the Adopt Me dashboard (on
 BabyFarm = true, -- Enable/disable baby farming
 PetFarm = {
 Enabled = true, -- Enable/disable pet farming
-FarmEggs = true, -- Farm eggs instead of regular pets
-BuyEggs = true, -- Automatically buy eggs when needed
+FarmEggs = false, -- Farm eggs instead of regular pets
+BuyEggs = false, -- Automatically buy eggs when needed
 EggType = "any", -- Which egg type to farm (any or specific egg ID)
 BuyEggType = "aztec_egg_2025_aztec_egg", -- Which egg type to buy
 MaxPets = 1, -- Maximum pets to equip (1-2)
 FarmUntilFullGrown = false, -- Prioritize pets that aren't full grown
-PrioritizeFriendship = false, -- Prioritize pets with higher friendship
+PrioritizeFriendship = true, -- Prioritize pets with higher friendship
 SelectiveFarm = false, -- Only farm specific pet types
 SelectedPetTypes = {"aztec_egg_2025_aztec_egg", "retired_egg", "pet_recycler_2025_crystal_egg", "pet_recycler_2025_basic_egg"}, -- Pet types to farm when SelectiveFarm is enabled
 },
