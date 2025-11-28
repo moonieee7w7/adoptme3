@@ -2,7 +2,7 @@ wait(60)
 getgenv().Config = {
 Dashboard = {
 Enabled = false, -- true = Connect to Adopt Me dashboard for remote monitoring/control (uses websocket), false = Local farming only (better performance, no external connections)
-GroupName = "", -- Group name to organize accounts on the Adopt Me dashboard (only used if Enabled = true)
+GroupName = "VPS", -- Group name to organize accounts on the Adopt Me dashboard (only used if Enabled = true)
 },
 BabyFarm = true, -- Enable/disable baby farming
 PetFarm = {
@@ -10,15 +10,18 @@ Enabled = true, -- Enable/disable pet farming
 FarmEggs = false, -- Farm eggs instead of regular pets
 BuyEggs = false, -- Automatically buy eggs when needed
 EggType = "any", -- Which egg type to farm (any or specific egg ID)
-BuyEggType = "aztec_egg_2025_aztec_egg", -- Which egg type to buy
+BuyEggType = "any", -- Which egg type to buy
 MaxPets = 1, -- Maximum pets to equip (1-2)
 FarmUntilFullGrown = false, -- Prioritize pets that aren't full grown
-PrioritizeFriendship = true, -- Prioritize pets with higher friendship
+PrioritizeFriendship = false, -- Prioritize pets with higher friendship
 SelectiveFarm = false, -- Only farm specific pet types
-SelectedPetTypes = {"aztec_egg_2025_aztec_egg", "retired_egg", "pet_recycler_2025_crystal_egg", "pet_recycler_2025_basic_egg"}, -- Pet types to farm when SelectiveFarm is enabled
+SelectedPetTypes = {}, -- Pet types to farm when SelectiveFarm is enabled
+},
+AutoNeon = { -- Auto neon 
+Enabled = true,
+MakeMega = true, -- to use neon pets to make mega neon
 },
 Misc = {
-AutoNeon = true, -- Automatically make neon pets when possible
 AutoShowUI = true, -- (To Load the ui or not)
 },
 Performance = {
@@ -27,7 +30,7 @@ ReduceGraphics = true, -- Reduce graphics quality to minimum
 },
 AutoPotion = {
 Enabled = false, -- Use age potions automatically
-SelectedPets = {"halloween_2025_bat_cat", "halloween_2025_slimingo", "halloween_2025_ghostly_cat", "halloween_2025_aye_aye"}, -- Pet types to age with potions
+SelectedPets = {}, -- Pet types to age with potions
 },
 AutoTrade = {
 Enabled = false,
@@ -50,7 +53,7 @@ AutoPay = {
 Enabled = false, -- on or off 
 TargetPlayer = "", -- username of player to pay
 },
-AutoOpen = {
+AutoOpen = { -- auto open gift boxes/baits etc 
 Enabled = false,
 Items = {},
 },
@@ -63,19 +66,23 @@ rare = false,
 ultra_rare = false,
 legendary = false
 },
-KeepNeons = true, -- Keep neon pets
-KeepFullGrown = false -- Keep full grown pets
+KeepNeons = false,
+KeepFullGrown = false, -- Keep full grown pets
+SelectiveMode = true, -- Only recycle specific pet types
+SelectedPets = {"aztec_egg_2025_tree_frog", "aztec_egg_2025_tegu", "aztec_egg_2025_ehecatl"}
 },
-IdleProgression = {
+IdleProgression = { -- pet pen
 Enabled = true,
-SelectedPets = {"retired_egg", "aztec_egg_2025_aztec_egg", "pet_recycler_2025_crystal_egg", "pet_recycler_2025_basic_egg"}  -- List of pet IDs to prioritize
+SelectedPets = {},  -- List of pet IDs to use for the pet pen (if empty, use all available pets)
+ExcludedPets = {"aztec_egg_2025_tree_frog", "aztec_egg_2025_tegu", "aztec_egg_2025_ehecatl"}, -- List of pet IDs to exclude from the pet pen
+AutoMinigame = true -- Automatically start the pet pen micro minigame = alot of bucks and xp :moneybag:
 },
 Webhook = {
 Enabled = false, -- Send webhook notifications
 URL = "https://discord.com/api/webhooks/", -- Default Discord webhook URL
 PetUnlock = {
-Enabled = true, -- Send webhook notifications when unlocking a pet
-URL = "https://discord.com/api/webhooks/1436379718969593887/4pCaDUspd8NSldXRy_ZhJo371ylamYanHUuugonlKkzhAt2rBi6cTgANIfA6IWKqe-PM", -- Separate webhook for pet unlocks
+Enabled = false, -- Send webhook notifications when unlocking a pet
+URL = "https://discord.com/api/webhooks/", -- Separate webhook for pet unlocks
 FilterRarities = {"legendary"} -- Only send webhook for these rarities
 },
 },
