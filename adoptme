@@ -38,9 +38,9 @@ Enabled = true, -- Use age potions automatically
 SelectedPets = {"winter_2025_turtle_doves", "winter_2025_xmas_tree_sasquatch", "aztec_egg_2025_temple_friend", "aztec_egg_2025_winged_snake", "aztec_egg_2025_golden_lynx", "aztec_egg_2025_ahuizotl"}, -- Pet types to age with potions
 },
 AutoTrade = {
-Enabled = false,
+Enabled = true,
 AutoAcceptTrades = false,
-SendTradesTo = "",
+SendTradesTo = "Twilxghtz",
 TradeMode = "all", -- "specific" or "all"
 Categories = {"pets"},
 Items = {}, -- e.g., {"dog", "cat", "sandwich"}
