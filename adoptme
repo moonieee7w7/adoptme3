@@ -34,7 +34,7 @@ Disable3DRendering = true, -- Disable 3D rendering for better performance
 ReduceGraphics = true, -- Reduce graphics quality to minimum
 },
 AutoPotion = {
-Enabled = false, -- Use age potions automatically
+Enabled = true, -- Use age potions automatically
 SelectedPets = {"winter_2025_turtle_doves", "winter_2025_xmas_tree_sasquatch", "aztec_egg_2025_temple_friend", "aztec_egg_2025_winged_snake", "aztec_egg_2025_golden_lynx", "aztec_egg_2025_ahuizotl"}, -- Pet types to age with potions
 },
 AutoTrade = {
@@ -52,7 +52,7 @@ ExcludeFullGrown = false
 },
 AutoBuy = {
 Enabled = true, -- Enable auto buying system
-SelectedItems = {"winter_2025_turtle_doves"}, -- Items to buy (e.g., {"pet_food", "water_cooler", "pizza_ingredients"})
+SelectedItems = {"pets|winter_2025_turtle_doves"}, -- Items to buy (e.g., {"pet_food", "water_cooler", "pizza_ingredients"})
 },
 AutoPay = {
 Enabled = false, -- on or off 
