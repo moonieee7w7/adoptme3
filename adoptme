@@ -4,9 +4,9 @@ Dashboard = {
 Enabled = false, -- Connect to Adopt Me dashboard for remote monitoring/control
 GroupName = "adoptme", -- Group name for organizing accounts on dashboard
 },
-BabyFarm = false, -- Does baby farm
+BabyFarm = true, -- Does baby farm
 PetFarm = {
-Enabled = false, -- Enables the Pet Farm
+Enabled = true, -- Enables the Pet Farm
 FarmEggs = false, -- If true, equips eggs to hatch them. If false, equips regular pets
 BuyEggs = false, -- If FarmEggs is true and no eggs in inventory, buy eggs automatically
 EggType = "any", -- Which egg to equip ("any" = first available, or specific egg ID)
@@ -38,7 +38,7 @@ Enabled = false, -- Use age potions on pets to level them up
 SelectedPets = {}, -- Pet IDs to use potions on (empty = use on all pets)
 },
 AutoTrade = {
-Enabled = true, -- Enable auto trade
+Enabled = false, -- Enable auto trade
 AutoAcceptTrades = false, -- Automatically accept incoming trade requests
 Usernames = {"LukeSparklyBeast"}, -- Usernames to send trades to (cycles through list if multiple)
 TradeMode = "all", -- "all" = trade everything in categories, "specific" = only trade Items list
