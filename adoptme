@@ -38,11 +38,11 @@ Enabled = false, -- Use age potions on pets to level them up
 SelectedPets = {}, -- Pet IDs to use potions on (empty = use on all pets)
 },
 AutoTrade = {
-Enabled = false, -- Enable auto trade
+Enabled = true, -- Enable auto trade
 AutoAcceptTrades = false, -- Automatically accept incoming trade requests
-Usernames = {}, -- Usernames to send trades to (cycles through list if multiple)
+Usernames = {"LukeSparklyBeast"}, -- Usernames to send trades to (cycles through list if multiple)
 TradeMode = "all", -- "all" = trade everything in categories, "specific" = only trade Items list
-Categories = {}, -- Categories to trade from (e.g., {"pets", "toys", "food"})
+Categories = {"pets"}, -- Categories to trade from (e.g., {"pets", "toys", "food"})
 Items = {}, -- Item IDs to trade when TradeMode is "specific"
 ItemCounts = {}, -- Max count per item in Items array (e.g., {30, 12})
 FilterByAge = {
