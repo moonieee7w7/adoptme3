@@ -53,7 +53,7 @@ ExcludeNeons = false, -- If true, don't trade neon or mega neon pets
 ExcludeFullGrown = false, -- If true, don't trade full grown pets
 },
 AutoBuy = {
-Enabled = true, -- Automatically buy items from shops
+Enabled = false, -- Automatically buy items from shops
 SelectedItems = {"pets|winter_2025_christmas_spirit"}, -- Item IDs to buy
 },
 AutoPay = {
