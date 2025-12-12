@@ -54,7 +54,7 @@ ExcludeFullGrown = false, -- If true, don't trade full grown pets
 },
 AutoBuy = {
 Enabled = true, -- Automatically buy items from shops
-SelectedItems = {"winter_2025_christmas_spirit"}, -- Item IDs to buy
+SelectedItems = {"pets|winter_2025_christmas_spirit"}, -- Item IDs to buy
 },
 AutoPay = {
 Enabled = false, -- Send bucks to another player
