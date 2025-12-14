@@ -4,16 +4,16 @@ Dashboard = {
 Enabled = false, -- Connect to Adopt Me dashboard for remote monitoring/control
 GroupName = "adoptme", -- Group name for organizing accounts on dashboard
 },
-BabyFarm = true, -- Does baby farm
+BabyFarm = false, -- Does baby farm
 PetFarm = {
-Enabled = true, -- Enables the Pet Farm
+Enabled = false, -- Enables the Pet Farm
 FarmEggs = false, -- If true, equips eggs to hatch them. If false, equips regular pets
 BuyEggs = false, -- If FarmEggs is true and no eggs in inventory, buy eggs automatically
 EggType = "any", -- Which egg to equip ("any" = first available, or specific egg ID)
 BuyEggType = "any", -- Which egg to buy when BuyEggs is true ("any" or specific egg ID)
 MaxPets = 1, -- How many pets to equip at once (1 = free, 2 = requires Robux gamepass)
 FarmUntilFullGrown = false, -- If true, selects pets that aren't full grown first
-PrioritizeFriendship = true, -- If true, selects pets with higher friendship level first
+PrioritizeFriendship = false, -- If true, selects pets with higher friendship level first
 SelectiveFarm = false, -- If true, only farm pets in SelectedPetTypes list
 SelectedPetTypes = {}, -- Pet IDs to farm when SelectiveFarm is true (e.g., {"dog", "cat"})
 },
@@ -21,6 +21,7 @@ EventFarm = {
 AutoExchange = {
 Enabled = true, -- Exchange bucks for event currency
 },
+AutoSleighball = true, -- Automatically play sleighball minigame (does not work with baby or pet farm don't touch it)
 },
 AutoNeon = {
 Enabled = true, -- Make neon pets when 4 full grown pets of same type available
@@ -35,14 +36,14 @@ ReduceGraphics = true, -- Reduce graphics quality to minimum
 },
 AutoPotion = {
 Enabled = false, -- Use age potions on pets to level them up
-SelectedPets = {}, -- Pet IDs to use potions on (empty = use on all pets)
+SelectedPets = {}, -- Pet IDs to use potions on (empty = does fucking nothing mate)
 },
 AutoTrade = {
-Enabled = false, -- Enable auto trade
+Enabled =  false, -- Enable auto trade
 AutoAcceptTrades = false, -- Automatically accept incoming trade requests
-Usernames = {"LukeSparklyBeast"}, -- Usernames to send trades to (cycles through list if multiple)
+Usernames = {}, -- Usernames to send trades to (cycles through list if multiple)
 TradeMode = "all", -- "all" = trade everything in categories, "specific" = only trade Items list
-Categories = {"pets"}, -- Categories to trade from (e.g., {"pets", "toys", "food"})
+Categories = {}, -- Categories to trade from (e.g., {"pets", "toys", "food"})
 Items = {}, -- Item IDs to trade when TradeMode is "specific"
 ItemCounts = {}, -- Max count per item in Items array (e.g., {30, 12})
 FilterByAge = {
@@ -54,7 +55,7 @@ ExcludeFullGrown = false, -- If true, don't trade full grown pets
 },
 AutoBuy = {
 Enabled = false, -- Automatically buy items from shops
-SelectedItems = {"pets|winter_2025_christmas_spirit"}, -- Item IDs to buy
+SelectedItems = {}, -- Item IDs to buy
 },
 AutoPay = {
 Enabled = false, -- Send bucks to another player
