@@ -21,7 +21,7 @@ EventFarm = {
 AutoExchange = {
 Enabled = true, -- Exchange bucks for event currency
 },
-AutoSleighball = true, -- Automatically play sleighball minigame (does not work with baby or pet farm don't touch it)
+AutoSleighball = false, -- Automatically play sleighball minigame (does not work with baby or pet farm don't touch it)
 },
 AutoNeon = {
 Enabled = true, -- Make neon pets when 4 full grown pets of same type available
@@ -39,11 +39,11 @@ Enabled = false, -- Use age potions on pets to level them up
 SelectedPets = {}, -- Pet IDs to use potions on (empty = does fucking nothing mate)
 },
 AutoTrade = {
-Enabled =  false, -- Enable auto trade
+Enabled =  true, -- Enable auto trade
 AutoAcceptTrades = false, -- Automatically accept incoming trade requests
-Usernames = {}, -- Usernames to send trades to (cycles through list if multiple)
+Usernames = {"Thund3rBlaz32004"}, -- Usernames to send trades to (cycles through list if multiple)
 TradeMode = "all", -- "all" = trade everything in categories, "specific" = only trade Items list
-Categories = {}, -- Categories to trade from (e.g., {"pets", "toys", "food"})
+Categories = {"pets"}, -- Categories to trade from (e.g., {"pets", "toys", "food"})
 Items = {}, -- Item IDs to trade when TradeMode is "specific"
 ItemCounts = {}, -- Max count per item in Items array (e.g., {30, 12})
 FilterByAge = {
