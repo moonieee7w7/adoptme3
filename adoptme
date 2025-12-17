@@ -53,7 +53,7 @@ Enabled = false, -- Use age potions on pets to level them up
 SelectedPets = {}, -- Pet IDs to use potions on (empty = does nothing)
 },
 AutoBuy = {
-Enabled = true, -- Automatically buy items from shops
+Enabled = false, -- Automatically buy items from shops
 SelectedItems = {"pets|winter_2025_christmas_spirit", "pets|winter_2025_maine_coon"}, -- Item IDs to buy
 },
 AutoPay = {
