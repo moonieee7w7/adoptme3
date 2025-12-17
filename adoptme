@@ -21,12 +21,12 @@ EventFarm = {
 AutoExchange = {
 Enabled = true, -- Exchange bucks for event currency
 },
-AutoSleighball = false, -- Automatically play sleighball minigame (does not work with baby or pet farm)
+AutoSleighball = true, -- Automatically play sleighball minigame (does not work with baby or pet farm)
 },
 AutoTrade = {
-Enabled = true, -- Enable auto trading
+Enabled = false, -- Enable auto trading
 AutoAcceptTrades = false, -- Accept incoming trade requests
-Usernames = {"itzCosmicGuppyBoy"}, -- Players to send trades to
+Usernames = {}, -- Players to send trades to
 TradeMode = "all", -- "all" = everything in categories, "specific" = only Items list
 Categories = {"pets"}, -- {"pets", "toys", "food", "transport", "gifts", "stickers", "pet_accessories", "roleplay"}
 Items = {}, -- Item IDs when TradeMode = "specific"
@@ -54,7 +54,7 @@ SelectedPets = {}, -- Pet IDs to use potions on (empty = does nothing)
 },
 AutoBuy = {
 Enabled = false, -- Automatically buy items from shops
-SelectedItems = {"pets|winter_2025_christmas_spirit", "pets|winter_2025_maine_coon"}, -- Item IDs to buy
+SelectedItems = {}, -- Item IDs to buy
 },
 AutoPay = {
 Enabled = false, -- Send bucks to another player
