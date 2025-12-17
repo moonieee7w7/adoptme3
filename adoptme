@@ -22,13 +22,14 @@ AutoExchange = {
 Enabled = true, -- Exchange bucks for event currency
 },
 AutoSleighball = true, -- Automatically play sleighball minigame (does not work with baby or pet farm)
+AutoHumbug = true, -- Automatically play humbug minigame (does not work with baby or pet farm)
 },
 AutoTrade = {
 Enabled = false, -- Enable auto trading
 AutoAcceptTrades = false, -- Accept incoming trade requests
 Usernames = {}, -- Players to send trades to
 TradeMode = "all", -- "all" = everything in categories, "specific" = only Items list
-Categories = {"pets"}, -- {"pets", "toys", "food", "transport", "gifts", "stickers", "pet_accessories", "roleplay"}
+Categories = {}, -- {"pets", "toys", "food", "transport", "gifts", "stickers", "pet_accessories", "roleplay"}
 Items = {}, -- Item IDs when TradeMode = "specific"
 ItemCounts = {}, -- Max count per item in Items array
 PetTypes = {}, -- {} = all, {"regular", "neon", "mega"}
@@ -45,8 +46,8 @@ MaxPerType = {}, -- {} = unlimited, {dog = 2, cat = 1} = limits per pet type
 Settings = {
 AutoShowUI = true, -- Load the UI on script start (main overlay disable for less memory usage)
 ShowOverlay = true, -- Show stats overlay (disables 3D rendering)
-ReduceGraphics = tue, -- Reduce graphics quality to minimum
-FPSCap = 3, -- FPS cap option (0 = uncapped)
+ReduceGraphics = true, -- Reduce graphics quality to minimum
+FPSCap = 0, -- FPS cap option (0 = uncapped)
 },
 AutoPotion = {
 Enabled = false, -- Use age potions on pets to level them up
