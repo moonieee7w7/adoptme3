@@ -21,15 +21,15 @@ EventFarm = {
 AutoExchange = {
 Enabled = true, -- Exchange bucks for event currency
 },
-AutoSleighball = false, -- Automatically play sleighball minigame (does not work with baby or pet farm)
-AutoHumbug = false, -- Automatically play humbug minigame (does not work with baby or pet farm)
+AutoSleighball = true, -- Automatically play sleighball minigame (does not work with baby or pet farm)
+AutoHumbug = true, -- Automatically play humbug minigame (does not work with baby or pet farm)
 },
 AutoTrade = {
-Enabled = true, -- Enable auto trading
+Enabled = false, -- Enable auto trading
 AutoAcceptTrades = false, -- Accept incoming trade requests
-Usernames = {"Twilxghtz"}, -- Players to send trades to
+Usernames = {}, -- Players to send trades to
 TradeMode = "all", -- "all" = everything in categories, "specific" = only Items list
-Categories = {"pets"}, -- {"pets", "toys", "food", "transport", "gifts", "stickers", "pet_accessories", "roleplay"}
+Categories = {}, -- {"pets", "toys", "food", "transport", "gifts", "stickers", "pet_accessories", "roleplay"}
 Items = {}, -- Item IDs when TradeMode = "specific"
 ItemCounts = {}, -- Max count per item in Items array
 PetTypes = {}, -- {} = all, {"regular", "neon", "mega"}
@@ -50,8 +50,8 @@ ReduceGraphics = true, -- Reduce graphics quality to minimum
 FPSCap = 0, -- FPS cap option (0 = uncapped)
 },
 AutoPotion = {
-Enabled = true, -- Use age potions on pets to level them up
-SelectedPets = {"winter_2025_snowball_pug"}, -- Pet IDs to use potions on (empty = does nothing)
+Enabled = false, -- Use age potions on pets to level them up
+SelectedPets = {}, -- Pet IDs to use potions on (empty = does nothing)
 },
 AutoBuy = {
 Enabled = false, -- Automatically buy items from shops
