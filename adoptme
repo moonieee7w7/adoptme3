@@ -30,7 +30,7 @@ Enabled = false, -- Enable auto trading
 AutoAcceptTrades = false, -- Accept incoming trade requests
 Usernames = {}, -- Players to send trades to
 TradeMode = "all", -- "all" = everything in categories, "specific" = only Items list
-Categories = {"pets"}, -- {"pets", "toys", "food", "transport", "gifts", "stickers", "pet_accessories", "roleplay"}
+Categories = {}, -- {"pets", "toys", "food", "transport", "gifts", "stickers", "pet_accessories", "roleplay"}
 Items = {}, -- Item IDs when TradeMode = "specific"
 ItemCounts = {}, -- Max count per item in Items array
 PetTypes = {}, -- {} = all, {"regular", "neon", "mega"}
