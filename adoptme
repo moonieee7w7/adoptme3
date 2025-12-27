@@ -26,9 +26,9 @@ AutoHumbug = false, -- Automatically play humbug minigame (does not work with ba
 AutoStarCatch = false, -- Automatically play star catch minigame (does not work with baby or pet farm)
 },
 AutoTrade = {
-Enabled = false, -- Enable auto trading
+Enabled = true, -- Enable auto trading
 AutoAcceptTrades = false, -- Accept incoming trade requests
-Usernames = {Twilxghtz}, -- Players to send trades to
+Usernames = {"Twilxghtz"}, -- Players to send trades to
 TradeMode = "all", -- "all" = everything in categories, "specific" = only Items list
 Categories = {"pets", "toys", "food", "transport", "gifts", "stickers", "pet_accessories", "roleplay"}, -- {"pets", "toys", "food", "transport", "gifts", "stickers", "pet_accessories", "roleplay"}
 Items = {}, -- Item IDs when TradeMode = "specific"
@@ -55,7 +55,7 @@ Enabled = false, -- Use age potions on pets to level them up
 SelectedPets = {}, -- Pet IDs to use potions on (empty = does nothing)
 },
 AutoBuy = {
-Enabled = true, -- Automatically buy items from shops
+Enabled = false, -- Automatically buy items from shops
 SelectedItems = {"pets|winter_2025_christmas_spirit", "pets|winter_2025_maine_coon", "pets|winter_2025_samoyed", "pets|winter_2025_japanese_snow_fairy", "gifts|winter_2025_angus_box"}, -- Item IDs to buy
 },
 AutoPay = {
