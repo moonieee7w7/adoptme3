@@ -4,16 +4,16 @@ Dashboard = {
 Enabled = false, -- Connect to Adopt Me dashboard for remote monitoring/control
 GroupName = "adoptme", -- Group name for organizing accounts on dashboard
 },
-BabyFarm = false, -- Does baby farm
+BabyFarm = true, -- Does baby farm
 PetFarm = {
-Enabled = false, -- Enables the Pet Farm
+Enabled = true, -- Enables the Pet Farm
 FarmEggs = false, -- If true, equips eggs to hatch them. If false, equips regular pets
 BuyEggs = false, -- If FarmEggs is true and no eggs in inventory, buy eggs automatically
 EggType = "any", -- Which egg to equip ("any" = first available, or specific egg ID)
 BuyEggType = "any", -- Which egg to buy when BuyEggs is true ("any" or specific egg ID)
 MaxPets = 1, -- How many pets to equip at once (1 = free, 2 = requires Robux gamepass)
 FarmUntilFullGrown = false, -- If true, selects pets that aren't full grown first
-PrioritizeFriendship = false, -- If true, selects pets with higher friendship level first
+PrioritizeFriendship = true, -- If true, selects pets with higher friendship level first
 SelectiveFarm = false, -- If true, only farm pets in SelectedPetTypes list
 SelectedPetTypes = {}, -- Pet IDs to farm when SelectiveFarm is true (e.g., {"dog", "cat"})
 },
@@ -21,9 +21,9 @@ EventFarm = {
 AutoExchange = {
 Enabled = true, -- Exchange bucks for event currency
 },
-AutoSleighball = true, -- Automatically play sleighball minigame (does not work with baby or pet farm)
-AutoHumbug = true, -- Automatically play humbug minigame (does not work with baby or pet farm)
-AutoStarCatch = true, -- Automatically play star catch minigame (does not work with baby or pet farm)
+AutoSleighball = false, -- Automatically play sleighball minigame (does not work with baby or pet farm)
+AutoHumbug = false, -- Automatically play humbug minigame (does not work with baby or pet farm)
+AutoStarCatch = false, -- Automatically play star catch minigame (does not work with baby or pet farm)
 },
 AutoTrade = {
 Enabled = false, -- Enable auto trading
@@ -55,8 +55,8 @@ Enabled = false, -- Use age potions on pets to level them up
 SelectedPets = {}, -- Pet IDs to use potions on (empty = does nothing)
 },
 AutoBuy = {
-Enabled = false, -- Automatically buy items from shops
-SelectedItems = {"pets|winter_2025_christmas_spirit", "pets|winter_2025_maine_coon", "pets|winter_2025_samoyed", "pets|winter_2025_japanese_snow_fairy", "gifts|winter_2025_angus_box"}, -- Item IDs to buy
+Enabled = true, -- Automatically buy items from shops
+SelectedItems = {"pets|winter_2025_christmas_spirit", "pets|winter_2025_cozy_mistletroll", "pets|winter_2025_samoyed", "pets|winter_2025_maine_coon", "pets|winter_2025_japanese_snow_fairy"}, -- Item IDs to buy
 },
 AutoPay = {
 Enabled = false, -- Send bucks to another player
