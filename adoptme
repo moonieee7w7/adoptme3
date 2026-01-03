@@ -1,9 +1,5 @@
 wait(60)
 getgenv().Config = {
-Dashboard = {
-Enabled = false, -- Connect to Adopt Me dashboard for remote monitoring/control
-GroupName = "adoptme", -- Group name for organizing accounts on dashboard
-},
 BabyFarm = true, -- Does baby farm
 PetFarm = {
 Enabled = true, -- Enables the Pet Farm
@@ -17,26 +13,6 @@ PrioritizeFriendship = true, -- If true, selects pets with higher friendship lev
 SelectiveFarm = false, -- If true, only farm pets in SelectedPetTypes list
 SelectedPetTypes = {}, -- Pet IDs to farm when SelectiveFarm is true (e.g., {"dog", "cat"})
 },
-EventFarm = {
-AutoExchange = {
-Enabled = true, -- Exchange bucks for event currency
-},
-AutoSleighball = false, -- Automatically play sleighball minigame (does not work with baby or pet farm)
-AutoHumbug = false, -- Automatically play humbug minigame (does not work with baby or pet farm)
-AutoStarCatch = false, -- Automatically play star catch minigame (does not work with baby or pet farm)
-},
-AutoTrade = {
-Enabled = false, -- Enable auto trading
-AutoAcceptTrades = false, -- Accept incoming trade requests
-Usernames = {}, -- Players to send trades to
-TradeMode = "all", -- "all" = everything in categories, "specific" = only Items list
-Categories = {}, -- {"pets", "toys", "food", "transport", "gifts", "stickers", "pet_accessories", "roleplay"}
-Items = {}, -- Item IDs when TradeMode = "specific"
-ItemCounts = {}, -- Max count per item in Items array
-PetTypes = {}, -- {} = all, {"regular", "neon", "mega"}
-Ages = {}, -- {} = all, {1, 2, 3, 4, 5, 6}
-AutoLeaveAfterTrades = true, -- Leave trade area after completing trades
-},
 AutoNeon = {
 Enabled = true, -- Enable auto neon/mega fusion
 MakeMega = true, -- Fuse neons into mega neons
@@ -45,26 +21,22 @@ SelectedPets = {}, -- {} when NeonAll = true, otherwise {"dog", "cat"} etc
 MaxPerType = {}, -- {} = unlimited, {dog = 2, cat = 1} = limits per pet type
 },
 Settings = {
-AutoShowUI = true, -- Load the UI on script start (main overlay disable for less memory usage)
 ShowOverlay = true, -- Show stats overlay (disables 3D rendering)
 ReduceGraphics = true, -- Reduce graphics quality to minimum
 FPSCap = 2, -- FPS cap option (0 = uncapped)
 },
+AutoBuy = {
+Enabled = false, -- Automatically buy items from shops
+SelectedItems = {}, -- Item IDs to buy
+BuyAmounts = {}, -- How many of each item to buy. Example: {5, 10} buys 5 cracked_eggs and 10 sandwiches. Empty {} buys infinite of each item. If there are more items than amounts, remaining items default to infinite.
+},
+AutoOpen = {
+Enabled = false, -- Open gift boxes automatically
+Items = {}, -- Item IDs to auto open (e.g., {"winter_2025_angus_box"})
+},
 AutoPotion = {
 Enabled = false, -- Use age potions on pets to level them up
 SelectedPets = {}, -- Pet IDs to use potions on (empty = does nothing)
-},
-AutoBuy = {
-Enabled = true, -- Automatically buy items from shops
-SelectedItems = {"pets|winter_2025_christmas_spirit", "pets|winter_2025_cozy_mistletroll", "pets|winter_2025_samoyed", "pets|winter_2025_maine_coon", "pets|winter_2025_japanese_snow_fairy"}, -- Item IDs to buy
-},
-AutoPay = {
-Enabled = false, -- Send bucks to another player
-TargetPlayer = "", -- Username of player to pay bucks to
-},
-AutoOpen = {
-Enabled = true, -- Open gift boxes, baits, etc automatically
-Items = {"winter_2025_angus_box", "2d_tuesdays_2025_box"}, -- Item IDs to auto open
 },
 AutoRecycle = {
 Enabled = false, -- Recycle pets at recycler for rewards
@@ -93,4 +65,4 @@ ExcludedTasks = {}, -- Task IDs to skip (e.g., {"buccaneer_band", "summerfest_bo
 },
 };
 script_key="OQtPcefIXokLTHbLAYDWspsTmCNlftGG"
-loadstring(game:HttpGet("https://zekehub.com/scripts/AdoptMe/MassFarm.lua"))()
+loadstring(game:HttpGet("https://zekehub.com/scripts/AdoptMe/Lite.lua"))()
