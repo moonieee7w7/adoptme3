@@ -31,8 +31,8 @@ SelectedItems = {"pets|winter_2025_christmas_spirit", "pets|winter_2025_cozy_mis
 BuyAmounts = {}, -- How many of each item to buy. Example: {5, 10} buys 5 cracked_eggs and 10 sandwiches. Empty {} buys infinite of each item. If there are more items than amounts, remaining items default to infinite.
 },
 AutoOpen = {
-Enabled = false, -- Open gift boxes automatically
-Items = {}, -- Item IDs to auto open (e.g., {"winter_2025_angus_box"})
+Enabled = true, -- Open gift boxes automatically
+Items = {"2d_tuesdays_2025_box"}, -- Item IDs to auto open (e.g., {"winter_2025_angus_box"})
 },
 AutoPotion = {
 Enabled = false, -- Use age potions on pets to level them up
