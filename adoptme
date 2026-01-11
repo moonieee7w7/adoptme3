@@ -47,7 +47,7 @@ ExcludedPets = {"pet_recycler_2025_giant_panda", "penguins_2025_dango_penguins",
 },
 IdleProgression = {
 Enabled = true, -- Put pets in pet pen for idle leveling
-SelectedPets = {""}, -- Pet IDs to put in pet pen (empty = use all)
+SelectedPets = {"winter_2025_japanese_snow_fairy"}, -- Pet IDs to put in pet pen (empty = use all)
 ExcludedPets = {}, -- Pet IDs to never put in pet pen
 },
 Webhook = {
