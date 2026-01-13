@@ -43,7 +43,7 @@ Enabled = true, -- Recycle pets at recycler for rewards
 RarityFilter = {common = true, uncommon = true, rare = true, ultra_rare = true, legendary = true}, -- Which rarities to recycle (true = recycle, false = keep)
 AgeFilter = {}, -- empty = all ages, or {1,2,3,4,5,6}
 VersionFilter = {}, -- empty = all, or {"regular", "neon", "mega"}
-ExcludedPets = {"pet_recycler_2025_giant_panda", "penguins_2025_dango_penguins", "pet_recycler_2025_emberlight", "winter_2025_angus_calf", "winter_2025_mrs_whiskerpips", "winter_2025_xmas_tree_sasquatch", "winter_2025_samoyed", "winter_2025_snowball_pug", "winter_2025_old_king_coal", "winter_2025_maine_coon", "winter_2025_japanese_snow_fairy", "winter_2025_cozy_mistletroll", "winter_2025_christmas_spirit", "winter_2025_angus_cow", "winter_2025_angus_bull", "2d_tuesdays_2025_2d_kitty"}, -- Pet IDs to never recycle even if rarity matches {"dog", "cat"}
+ExcludedPets = {"food_pets_2026_dragonfruit_fox", "ice_dimension_2025_frostbite_bear", "pet_recycler_2025_giant_panda", "penguins_2025_dango_penguins", "pet_recycler_2025_emberlight", "winter_2025_angus_calf", "winter_2025_mrs_whiskerpips", "winter_2025_xmas_tree_sasquatch", "winter_2025_samoyed", "winter_2025_snowball_pug", "winter_2025_old_king_coal", "winter_2025_maine_coon", "winter_2025_japanese_snow_fairy", "winter_2025_cozy_mistletroll", "winter_2025_christmas_spirit", "winter_2025_angus_cow", "winter_2025_angus_bull", "2d_tuesdays_2025_2d_kitty"}, -- Pet IDs to never recycle even if rarity matches {"dog", "cat"}
 },
 IdleProgression = {
 Enabled = true, -- Put pets in pet pen for idle leveling
