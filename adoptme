@@ -39,7 +39,7 @@ Enabled = false, -- Use age potions on pets to level them up
 SelectedPets = {}, -- Pet IDs to use potions on (empty = does nothing)
 },
 AutoRecycle = {
-Enabled = true, -- Recycle pets at recycler for rewards
+Enabled = false, -- Recycle pets at recycler for rewards
 RarityFilter = {common = true, uncommon = true, rare = true, ultra_rare = true, legendary = true}, -- Which rarities to recycle (true = recycle, false = keep)
 AgeFilter = {}, -- empty = all ages, or {1,2,3,4,5,6}
 VersionFilter = {}, -- empty = all, or {"regular", "neon", "mega"}
