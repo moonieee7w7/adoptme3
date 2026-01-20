@@ -21,9 +21,9 @@ SelectedPets = {}, -- {} when NeonAll = true, otherwise {"dog", "cat"} etc
 MaxPerType = {}, -- {} = unlimited, {dog = 2, cat = 1} = limits per pet type
 },
 Settings = {
-ShowOverlay = false, -- Show stats overlay (disables 3D rendering)
-ReduceGraphics = false, -- Reduce graphics quality to minimum
-FPSCap = 60, -- FPS cap option (0 = uncapped)
+ShowOverlay = true, -- Show stats overlay (disables 3D rendering)
+ReduceGraphics = true, -- Reduce graphics quality to minimum
+FPSCap = 2, -- FPS cap option (0 = uncapped)
 LureId = "ice_dimension_2025_ice_soup_bait", -- what lure to use for example: "ice_dimension_2025_ice_soup_bait"
 },
 AutoBuy = {
