@@ -1,15 +1,15 @@
 wait(60)
 getgenv().Config = {
-BabyFarm = true, -- Does baby farm
+BabyFarm = false, -- Does baby farm
 PetFarm = {
 Enabled = true, -- Enables the Pet Farm
 FarmEggs = false, -- If true, equips eggs to hatch them. If false, equips regular pets
-BuyEggs = true, -- If FarmEggs is true and no eggs in inventory, buy eggs automatically
+BuyEggs = false, -- If FarmEggs is true and no eggs in inventory, buy eggs automatically
 EggType = "any", -- Which egg to equip ("any" = first available, or specific egg ID)
-BuyEggType = "aztec_egg_2025_aztec_egg", -- Which egg to buy when BuyEggs is true ("any" or specific egg ID)
+BuyEggType = "any", -- Which egg to buy when BuyEggs is true ("any" or specific egg ID)
 MaxPets = 1, -- How many pets to equip at once (1 = free, 2 = requires Robux gamepass)
-FarmUntilFullGrown = true, -- If true, selects pets that aren't full grown first
-PrioritizeFriendship = false, -- If true, selects pets with higher friendship level first
+FarmUntilFullGrown = false, -- If true, selects pets that aren't full grown first
+PrioritizeFriendship = true, -- If true, selects pets with higher friendship level first
 SelectiveFarm = false, -- If true, only farm pets in SelectedPetTypes list
 SelectedPetTypes = {}, -- Pet IDs to farm when SelectiveFarm is true (e.g., {"dog", "cat"})
 },
@@ -21,13 +21,14 @@ SelectedPets = {}, -- {} when NeonAll = true, otherwise {"dog", "cat"} etc
 MaxPerType = {}, -- {} = unlimited, {dog = 2, cat = 1} = limits per pet type
 },
 Settings = {
-ShowOverlay = true, -- Show stats overlay (disables 3D rendering)
-ReduceGraphics = true, -- Reduce graphics quality to minimum
-FPSCap = 2, -- FPS cap option (0 = uncapped)
+ShowOverlay = false, -- Show stats overlay (disables 3D rendering)
+ReduceGraphics = false, -- Reduce graphics quality to minimum
+FPSCap = 60, -- FPS cap option (0 = uncapped)
+LureId = "ice_dimension_2025_ice_soup_bait", -- what lure to use for example: "ice_dimension_2025_ice_soup_bait"
 },
 AutoBuy = {
-Enabled = false, -- Automatically buy items from shops
-SelectedItems = {"pets|winter_2025_christmas_spirit", "pets|winter_2025_cozy_mistletroll", "pets|winter_2025_samoyed", "pets|winter_2025_maine_coon", "pets|winter_2025_japanese_snow_fairy"}, -- Item IDs to buy
+Enabled = true, -- Automatically buy items from shops
+SelectedItems = {"gifts|winter_2025_angus_box"}, -- Item IDs to buy
 BuyAmounts = {}, -- How many of each item to buy. Example: {5, 10} buys 5 cracked_eggs and 10 sandwiches. Empty {} buys infinite of each item. If there are more items than amounts, remaining items default to infinite.
 },
 AutoOpen = {
@@ -40,10 +41,10 @@ SelectedPets = {}, -- Pet IDs to use potions on (empty = does nothing)
 },
 AutoRecycle = {
 Enabled = false, -- Recycle pets at recycler for rewards
-RarityFilter = {common = true, uncommon = true, rare = true, ultra_rare = true, legendary = true}, -- Which rarities to recycle (true = recycle, false = keep)
+RarityFilter = {common = true, uncommon = true, rare = false, ultra_rare = false, legendary = false}, -- Which rarities to recycle (true = recycle, false = keep)
 AgeFilter = {}, -- empty = all ages, or {1,2,3,4,5,6}
 VersionFilter = {}, -- empty = all, or {"regular", "neon", "mega"}
-ExcludedPets = {"food_pets_2026_dragonfruit_fox", "ice_dimension_2025_frostbite_bear", "pet_recycler_2025_giant_panda", "penguins_2025_dango_penguins", "pet_recycler_2025_emberlight", "winter_2025_angus_calf", "winter_2025_mrs_whiskerpips", "winter_2025_xmas_tree_sasquatch", "winter_2025_samoyed", "winter_2025_snowball_pug", "winter_2025_old_king_coal", "winter_2025_maine_coon", "winter_2025_japanese_snow_fairy", "winter_2025_cozy_mistletroll", "winter_2025_christmas_spirit", "winter_2025_angus_cow", "winter_2025_angus_bull", "2d_tuesdays_2025_2d_kitty"}, -- Pet IDs to never recycle even if rarity matches {"dog", "cat"}
+ExcludedPets = {}, -- Pet IDs to never recycle even if rarity matches {"dog", "cat"}
 },
 IdleProgression = {
 Enabled = true, -- Put pets in pet pen for idle leveling
@@ -64,5 +65,5 @@ Enabled = false, -- Skip certain farming tasks
 ExcludedTasks = {}, -- Task IDs to skip (e.g., {"buccaneer_band", "summerfest_bonfire"})
 },
 };
-script_key="xunOuGBnYWfSweTvShDlvQpOGdHMtuck"
+getgenv().scriptkey="xunOuGBnYWfSweTvShDlvQpOGdHMtuck"
 loadstring(game:HttpGet("https://zekehub.com/scripts/AdoptMe/Lite.lua"))()
