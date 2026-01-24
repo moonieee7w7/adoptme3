@@ -33,7 +33,7 @@ BuyAmounts = {}, -- How many of each item to buy. Example: {5, 10} buys 5 cracke
 },
 AutoOpen = {
 Enabled = true, -- Open gift boxes automatically
-Items = {"2d_tuesdays_2025_box"}, -- Item IDs to auto open (e.g., {"winter_2025_angus_box"})
+Items = {"2d_tuesdays_2025_box", "admin_abuse_box"}, -- Item IDs to auto open (e.g., {"winter_2025_angus_box"})
 },
 AutoPotion = {
 Enabled = false, -- Use age potions on pets to level them up
