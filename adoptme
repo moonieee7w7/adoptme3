@@ -27,8 +27,8 @@ FPSCap = 2, -- FPS cap option (0 = uncapped)
 LureId = "ice_dimension_2025_ice_soup_bait", -- what lure to use for example: "ice_dimension_2025_ice_soup_bait"
 },
 AutoBuy = {
-Enabled = true, -- Automatically buy items from shops
-SelectedItems = {"gifts|winter_2025_angus_box"}, -- Item IDs to buy
+Enabled = false, -- Automatically buy items from shops
+SelectedItems = {"gifts|"}, -- Item IDs to buy
 BuyAmounts = {}, -- How many of each item to buy. Example: {5, 10} buys 5 cracked_eggs and 10 sandwiches. Empty {} buys infinite of each item. If there are more items than amounts, remaining items default to infinite.
 },
 AutoOpen = {
