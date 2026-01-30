@@ -1,3 +1,4 @@
+
 wait(60)
 getgenv().Config = {
 BabyFarm = false, -- Does baby farm
@@ -27,8 +28,8 @@ FPSCap = 2, -- FPS cap option (0 = uncapped)
 LureId = "ice_dimension_2025_ice_soup_bait", -- what lure to use for example: "ice_dimension_2025_ice_soup_bait"
 },
 AutoBuy = {
-Enabled = false, -- Automatically buy items from shops
-SelectedItems = {"gifts|"}, -- Item IDs to buy
+Enabled = true, -- Automatically buy items from shops
+SelectedItems = {"gifts|winter_2025_angus_box"}, -- Item IDs to buy
 BuyAmounts = {}, -- How many of each item to buy. Example: {5, 10} buys 5 cracked_eggs and 10 sandwiches. Empty {} buys infinite of each item. If there are more items than amounts, remaining items default to infinite.
 },
 AutoOpen = {
@@ -48,7 +49,7 @@ ExcludedPets = {}, -- Pet IDs to never recycle even if rarity matches {"dog", "c
 },
 IdleProgression = {
 Enabled = true, -- Put pets in pet pen for idle leveling
-SelectedPets = {"winter_2025_japanese_snow_fairy"}, -- Pet IDs to put in pet pen (empty = use all)
+SelectedPets = {""}, -- Pet IDs to put in pet pen (empty = use all)
 ExcludedPets = {}, -- Pet IDs to never put in pet pen
 },
 Webhook = {
@@ -65,5 +66,5 @@ Enabled = false, -- Skip certain farming tasks
 ExcludedTasks = {}, -- Task IDs to skip (e.g., {"buccaneer_band", "summerfest_bonfire"})
 },
 };
-getgenv().scriptkey="xunOuGBnYWfSweTvShDlvQpOGdHMtuck"
+getgenv().scriptkey="WhGQhESZTXRJMWzlTsLXWmWepBwnxFQR"
 loadstring(game:HttpGet("https://zekehub.com/scripts/AdoptMe/Lite.lua"))()
