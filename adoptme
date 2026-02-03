@@ -1,4 +1,3 @@
-
 wait(60)
 getgenv().Config = {
 BabyFarm = false, -- Does baby farm
@@ -66,5 +65,5 @@ Enabled = false, -- Skip certain farming tasks
 ExcludedTasks = {}, -- Task IDs to skip (e.g., {"buccaneer_band", "summerfest_bonfire"})
 },
 };
-getgenv().scriptkey="WhGQhESZTXRJMWzlTsLXWmWepBwnxFQR"
+getgenv().scriptkey="xunOuGBnYWfSweTvShDlvQpOGdHMtuck"
 loadstring(game:HttpGet("https://zekehub.com/scripts/AdoptMe/Lite.lua"))()
